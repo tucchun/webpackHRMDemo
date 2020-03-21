@@ -1,7 +1,6 @@
 /* eslint-env browser */
 var app = document.getElementById('app');
 var time = document.getElementById('time');
-const print = require('./print')
 
 var timer = setInterval(updateClock, 1000);
 
@@ -11,7 +10,7 @@ function updateClock() {
 
 // Edit these styles to see them take effect immediately
 app.style.display = 'table-cell';
-app.style.width = '402px';
+app.style.width = '400px';
 app.style.height = '400px';
 app.style.border = '3px solid #339';
 app.style.background = '#99d';
@@ -26,12 +25,9 @@ app.style.verticalAlign = 'middle';
 // Uncomment this next line to trigger a warning
 // require('Assert')
 require('assert');
-print()
 
 if (module.hot) {
-  module.hot.accept('./print.js', () => {
-    console.log('print.js changed')
-  });
+  module.hot.accept();
   module.hot.dispose(function() {
     clearInterval(timer);
   });

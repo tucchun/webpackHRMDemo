@@ -14,5 +14,10 @@
   },
   "scripts": {
     "start:multientry": "WEBPACK_CONFIG=./webpack.config.multientry.js node server.js"
+  },
+  "devDependencies": {
+    "css-loader": "3.4.2",
+    "lodash": "4.17.15",
+    "style-loader": "1.1.3"
   }
 }
