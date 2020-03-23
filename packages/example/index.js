@@ -1,6 +1,25 @@
 import _ from "lodash";
 import printMe from "./print.js";
+import {
+	SyncHook,
+	SyncBailHook,
+	SyncWaterfallHook,
+	SyncLoopHook,
+	AsyncParallelHook,
+	AsyncParallelBailHook,
+	AsyncSeriesHook,
+	AsyncSeriesBailHook,
+	AsyncSeriesWaterfallHook
+ } from 'tapable'
 import './styles.css';
+
+
+class Car {
+  constructor () {
+    
+  }
+}
+
 
 function component() {
   var element = document.createElement("div");

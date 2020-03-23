@@ -43,8 +43,8 @@
     "prettier": "^1.16.4",
     "sinon": "^1.12.2",
     "supertest": "^3.1.0",
-    "webpack": "^4.20.2",
-    "webpack-dev-middleware": "^3.7.2"
+    "webpack": "4.42.0",
+    "webpack-dev-middleware": "3.7.2"
   },
   "prettier": {
     "singleQuote": true,
