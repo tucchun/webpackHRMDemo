@@ -1,4 +1,5 @@
 var webpack = require("webpack");
+const MyExampleWebpackPlugin = require('./Plugin')
 
 module.exports = {
   mode: "development",
@@ -28,6 +29,7 @@ module.exports = {
   plugins: [
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.NoEmitOnErrorsPlugin(),
+    new MyExampleWebpackPlugin()
   ]
 };

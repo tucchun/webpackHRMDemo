@@ -3,5 +3,5 @@
 // }
 
 module.exports = function print () {
-  console.log('I get called from print.123123j11231231s111112!')
+  console.log('I get called from print.js!')
 }
