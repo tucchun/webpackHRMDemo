@@ -1,5 +1,7 @@
 var webpack = require("webpack");
 const MyExampleWebpackPlugin = require('./Plugin')
+const HelloCompilationPlugin = require('./HelloCompilationPlugin')
+const MyPlugin = require('./MyPlugin')
 
 module.exports = {
   mode: "development",
@@ -27,6 +29,8 @@ module.exports = {
   },
   devtool: "#source-map",
   plugins: [
+    new HelloCompilationPlugin(),
+    new MyPlugin(),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
